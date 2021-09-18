@@ -1,1 +1,232 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.form_hint, .required_notification {font-size: 11px;}
+
+.contenedor {
+    display: flex;
+    flex-flow: column;
+   margin-top: 30px;
+}
+
+.contenedor h2 {
+  margin:0;
+  display: inline;
+  
+}
+
+.columna {
+    display: flex;
+    flex-flow: column; 
+    margin-top: 20px;
+}
+
+.row-titulo-input {
+    margin-left: 30px;
+    width: 350px;
+    height: 40px;
+    border-bottom:1px solid #777;
+}
+
+.row-group-slide {
+  display: flex;
+  flex-flow: column; 
+  margin-left: 20px;
+  width: 160px;
+  margin-top: 30px;
+}
+
+.row-titulo {
+  margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #777;
+  }
+
+  .row-form {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .row-titulo-enunciado {
+    margin-left: 30px;
+    width: 1000px;
+    height: 40px;
+   /* border-bottom:1px solid #777;*/
+}
+
+.total-readonly {
+  font-weight: bold;
+  font-style: italic;
+  color: #777;
+}
+
+.total {
+  font-weight: bold;
+  color: #00C853;
+}
+
+  .row-group {
+    display: flex;
+    flex-flow: column; 
+    margin-left: 20px;
+    width: 200px;
+    margin-top: 5px;
+  }
+
+  .row-group-number {
+    display: flex;
+    flex-flow: column; 
+    margin-left: 20px;
+    width: 120px;
+    margin-top: 5px;
+  }
+
+  .row-group-textarea {
+    display: flex;
+    flex-flow: column; 
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .row-group-file {
+    display: flex;
+    flex-flow: grid; 
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 5px;
+    
+  }
+
+  .row-group-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+  .row-button {
+    display: flex;
+    margin-top: 15px;
+   justify-content: space-around;
+ 
+  }
+
+  .row-button-pregunta {
+    display: flex;
+    margin-top: 15px;
+    align-items: flex-start;
+ 
+  }
+
+  .row-button-inferior {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+   justify-content: space-between;
+ 
+  }
+
+  
+  .required_notification {
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+   
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .success {
+    padding: 20px;
+    background-color: #59ec3b; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+
+
+.material-icons.blue500 { color: #2196f3;margin-left: 15px; }
+.material-icons.green500 { color: #009688;margin-left: 15px; }
+
+.material-icons.greenVerySatisfactory { color: #00C853;font-size: 50px;}
+.material-icons.greenSastisfactory { color: #B9F6CA ;font-size: 50px;}
+.material-icons.yellowNeutral { color: #F4FF81 ;font-size: 50px;}
+.material-icons.redDisSastisfactory { color: #E57373 ;font-size: 50px;}
+.material-icons.redVeryDisSastisfactory { color: #B71C1C ;font-size: 50px;}
+
+
+
+
+.check-columna { margin-top: 30px; }
+
+h2,h3 {
+  color : black;
+  opacity: 0.75;
+}
+
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spinner .8s linear infinite;
+}
+
+.flecha {
+  position: relative;
+  animation: flecha 2s infinite;
+}
+
+@keyframes flecha {
+  from {color: #2196f3; margin-top: 2px;  }
+  to {color: #B71C1C ; margin-top: 30px; }
+}
+
+.activo {
+  color: #009688;
+}
+
+.baja {
+  color: #9b3810;
+}
+
+.material-icons.blue500 { color: #2196f3;margin-left: 15px; }
+.material-icons.green500 { color: #009688;margin-left: 15px; }
+
+.material-icons.greenVerySatisfactory { color: #00C853;font-size: 50px;}
+.material-icons.greenSastisfactory { color: #B9F6CA ;font-size: 50px;}
+.material-icons.yellowNeutral { color: #F4FF81 ;font-size: 50px;}
+.material-icons.redDisSastisfactory { color: #E57373 ;font-size: 50px;}
+.material-icons.redVeryDisSastisfactory { color: #B71C1C ;font-size: 50px;}
